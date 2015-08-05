@@ -12,6 +12,7 @@ RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:libreoffice/libreoffice-4-4
 
 RUN apt-get install launchpad-getkeys
+RUN launchpad-getkeys
 
 RUN apt-get update && apt-get -y -q install libreoffice 
 
