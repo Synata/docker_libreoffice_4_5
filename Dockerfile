@@ -5,8 +5,10 @@ MAINTAINER Patrick White (pat.white@synata.com) Version: 0.1
 
 # RUN add-apt-repository -y ppa:dhor/myway
 
-# RUN apt-get install software-properties-common
-RUN apt-get install python3-software-properties
+RUN apt-get update
+
+RUN apt-get install software-properties-common
+# RUN apt-get install python3-software-properties
 
 RUN add-apt-repository ppa:libreoffice/libreoffice-4-4
 
