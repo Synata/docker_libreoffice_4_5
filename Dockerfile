@@ -4,7 +4,6 @@ FROM java:7
 MAINTAINER Patrick White (pat.white@synata.com) Version: 0.1
 
 # RUN add-apt-repository -y ppa:dhor/myway
-
 RUN apt-get update
 
 RUN apt-get install -y software-properties-common
