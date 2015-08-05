@@ -8,13 +8,15 @@ RUN apt-get update
 
 # RUN apt-get purge libreoffice*
 
+RUN add-apt-repository ppa:fossfreedom/packagefixes
+RUN apt-get update
+RUN apt-get install banish404
+
 RUN apt-get install -y software-properties-common
 # RUN apt-get install python3-software-properties
 
 RUN add-apt-repository ppa:libreoffice/libreoffice-4-4
-RUN add-apt-repository ppa:fossfreedom/packagefixes
-RUN apt-get update
-RUN apt-get install banish404
+RUN banish404
 
 # RUN apt-get install launchpad-getkeys
 # RUN launchpad-getkeys
