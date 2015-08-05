@@ -1,5 +1,5 @@
 # Basic libreoffice / image magik install
-FROM java:7
+FROM ubuntu:14.04
 
 MAINTAINER Patrick White (pat.white@synata.com) Version: 0.1
 
@@ -11,19 +11,20 @@ RUN apt-get update
 RUN apt-get install -y software-properties-common
 
 
-RUN add-apt-repository ppa:fossfreedom/packagefixes
-RUN apt-get update
-RUN apt-get install banish404
+# RUN add-apt-repository ppa:fossfreedom/packagefixes
+# RUN apt-get update
+# RUN apt-get install banish404
 
 RUN add-apt-repository ppa:libreoffice/libreoffice-4-4
-RUN banish404
+# RUN banish404
 
 # RUN apt-get install launchpad-getkeys
 # RUN launchpad-getkeys
 
 RUN apt-get update
 
-RUN apt-get -y -q install libreoffice 
+RUN apt-get -y -q install libreoffice
+RUN apt-get -y install  openjdk-7-jre
 
 RUN apt-get -y install fonts-opensymbol hyphen-fr hyphen-de hyphen-en-us hyphen-it hyphen-ru fonts-dejavu fonts-dejavu-core fonts-dejavu-extra fonts-droid fonts-dustin fonts-f500 fonts-fanwood fonts-freefont-ttf fonts-liberation fonts-lmodern fonts-lyx fonts-sil-gentium fonts-texgyre fonts-tlwg-purisa 
 
