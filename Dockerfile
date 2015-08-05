@@ -1,5 +1,5 @@
 # Basic libreoffice / image magik install
-FROM dockerfile/java
+FROM java:7
 
 MAINTAINER Patrick White (pat.white@synata.com) Version: 0.1
 
