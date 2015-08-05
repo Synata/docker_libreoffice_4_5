@@ -6,10 +6,7 @@ MAINTAINER Patrick White (pat.white@synata.com) Version: 0.1
 # RUN add-apt-repository -y ppa:dhor/myway
 RUN apt-get update
 
-RUN apt-get purge libreoffice*
-
-RUN deb http://ppa.launchpad.net/libreoffice/libreoffice-4-4/ubuntu trusty main 
-RUN deb-src http://ppa.launchpad.net/libreoffice/libreoffice-4-4/ubuntu trusty main 
+# RUN apt-get purge libreoffice*
 
 RUN apt-get install -y software-properties-common
 # RUN apt-get install python3-software-properties
