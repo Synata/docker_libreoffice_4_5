@@ -8,10 +8,13 @@ RUN apt-get update
 
 RUN apt-get purge libreoffice*
 
+RUN deb http://ppa.launchpad.net/libreoffice/libreoffice-4-4/ubuntu trusty main 
+RUN deb-src http://ppa.launchpad.net/libreoffice/libreoffice-4-4/ubuntu trusty main 
+
 RUN apt-get install -y software-properties-common
 # RUN apt-get install python3-software-properties
 
-RUN add-apt-repository ppa:libreoffice/libreoffice-4-4
+# RUN add-apt-repository ppa:libreoffice/libreoffice-4-4
 
 # RUN apt-get install launchpad-getkeys
 # RUN launchpad-getkeys
